@@ -1,7 +1,10 @@
 class OS extends React.Component {
   render() {
     return (
-      <button onClick={update}>Update MiniageOS</button>
+      <React.Fragment>
+        <button onClick={update}>Update MiniageOS</button>
+        <p>Welcome to MiniageOS</p>
+      </React.Fragment>
     );
   }
 }
