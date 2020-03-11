@@ -24,7 +24,7 @@ self.addEventListener('fetch', event => {
         
         caches.open(cacheName).then(cache => {
           cache.put(event.request, cachedResponse);
-        }
+        });
 
         return response;
       });
