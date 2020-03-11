@@ -9,4 +9,4 @@ class OS extends Component {
   }
 }
 
-ReactDOM.render(document.getElementById("root"), <OS/>);
+ReactDOM.render(<OS/>, document.getElementById("root"));
