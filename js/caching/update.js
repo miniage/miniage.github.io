@@ -1,7 +1,9 @@
-function update() {
+const cacheName = "miniage";
+
+async function update() {
   if ('caches' in window) {
-    window.caches.open('miniage').then(cache => {
-    });
+    await caches.delete(cacheName);
+    let cache = await window.caches.open(cacheName);
     window.location.reload();
   } else {
     alert("Your browser doesn't support updating...");
