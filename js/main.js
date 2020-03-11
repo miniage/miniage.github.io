@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import * as Updater from "/js/caching/update.js";
 
 class OS extends Component {
   render() {
     return (
-      <button onClick={update}>Update MiniageOS</button>
+      <button onClick={Updater.update}>Update MiniageOS</button>
     );
   }
 }
