@@ -1,4 +1,4 @@
-class OS extends Component {
+class OS extends React.Component {
   render() {
     return (
       <button onClick={update}>Update MiniageOS</button>
