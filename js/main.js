@@ -1,7 +1,7 @@
 class OS extends Component {
   render() {
     return (
-      <button onClick={Updater.update}>Update MiniageOS</button>
+      <button onClick={update}>Update MiniageOS</button>
     );
   }
 }
