@@ -3,7 +3,7 @@ const cacheName = "miniage";
 async function Update() {
   if ('caches' in window) {
     await caches.delete(cacheName);
-    let cache = await window.caches.open(cacheName);
+    await window.caches.open(cacheName);
     window.location.reload();
   } else {
     alert("Your browser doesn't support updating...");
