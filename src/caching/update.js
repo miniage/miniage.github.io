@@ -21,3 +21,5 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
+export default update;
