@@ -1,6 +1,6 @@
 const cacheName = "miniage";
 
-async function update() {
+async function Update() {
   if ('caches' in window) {
     await caches.delete(cacheName);
     let cache = await window.caches.open(cacheName);
@@ -22,4 +22,4 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-export default update;
+export default Update;
