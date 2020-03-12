@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import * as Updater from "/js/caching/update.js";
+import * as Updater from "/src/js/caching/update.js";
 
 class OS extends Component {
   render() {
