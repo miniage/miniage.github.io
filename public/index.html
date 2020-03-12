@@ -52,10 +52,27 @@
 </head>
 <body>
     <div id="root"></div>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" crossorigin />
-     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin />
-     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin />
-     <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin />
+     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js" crossorigin />
+     <script>
+    requirejs.config({
+        paths: {
+            'react': 'https://unpkg.com/react@15.3.2/dist/react',
+            'react-dom': 'https://unpkg.com/react-dom@15.3.2/dist/react-dom',
+            'prop-types': 'https://unpkg.com/prop-types@15.6.0/prop-types',
+            'react-onclickoutside': 'https://unpkg.com/react-onclickoutside@6.7.0/dist/react-onclickoutside',
+            'react-popper': 'https://unpkg.com/react-popper@0.7.4/dist/react-popper',
+            'moment': 'https://unpkg.com/moment@2.19.3/moment',
+            'datepicker': 'https://unpkg.com/react-datepicker@0.61.0/dist/react-datepicker'
+        }
+    });
+
+    requirejs(['react', 'react-dom', 'prop-types', 'react-onclickoutside', 'react-popper', 'moment', 'datepicker'], function(React, ReactDOM, PropTypes, onClickOutside, Popper, moment, DatePicker) {
+        ReactDOM.render(
+            React.createElement('p', {}, 'Hello, World!'),
+            document.getElementById('root')
+        )
+    });
+    </script>
     <!-- Load the react webpage -->
      <script src="/js/main.js" type="text/babel" />
     
