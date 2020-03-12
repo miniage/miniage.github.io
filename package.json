@@ -1,0 +1,39 @@
+{
+  "name": "MiniageOS",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "homepage": "https://miniage.github.io",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "push": "gh-pages -d build",
+    "deploy": "npm run build && npm run push"
+  },
+  "author": "Minion3665",
+  "dependencies": {
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-react": "7.8.3",
+    "babel-loader": "8.0.6",
+    "dotenv": "8.2.0",
+    "gh-pages": "^2.2.0",
+    "progress-bar-webpack-plugin": "2.1.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-scripts": "^3.4.0",
+    "webpack": "4.41.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
