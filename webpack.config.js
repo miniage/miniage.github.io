@@ -4,7 +4,7 @@ var BUILD_DIR = path.resolve(__dirname);
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-	entry: APP_DIR + '/main.js',
+	entry: APP_DIR + '/index.js',
 	mode: 'production',
 	output: {
 		path: BUILD_DIR,
