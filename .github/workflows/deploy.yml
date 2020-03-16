@@ -34,7 +34,7 @@ jobs:
     - name: copy
       run: |
         cp build/index.html build/404.html
-        ls
+        ls build
       env:
         CI: true
     - name: deploy
