@@ -6,7 +6,7 @@ class Button extends Component {
       <React.Fragment>
         <defs>
           <linearGradient id="ubuntu-button-style1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style=={{stopColor: "#ffffff", stopOpacity: 1}} />
+            <stop offset="0%" style={{stopColor: "#ffffff", stopOpacity: 1}} />
             <stop offset="100%" style={{stopColor: "#f3f1f1", stopOpacity: 1}} />
           </linearGradient>
         </defs>
