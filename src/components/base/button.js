@@ -10,7 +10,9 @@ class Button extends Component {
             <stop offset="100%" style={{stopColor: "#f3f1f1", stopOpacity: 1}} />
           </linearGradient>
         </defs>
-        <rect x="120" height="40" width="200" rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}>{this.props.children}</rect>
+        <rect x="120" height="40" width="200" rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}>
+            <text fill="#4c4c4c" font-size="12" font-family="Ubuntu" x="150" y="86">{this.props.children}</text>
+        </rect>
       </React.Fragment>
     );
   }
