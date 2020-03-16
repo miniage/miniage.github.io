@@ -14,6 +14,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/worker.js').then(function(registration) {
       // Registration was successful
+      console.log("Worker registered successfully")
     }, function(err) {
       // registration failed :(
       alert('ServiceWorker registration failed');
