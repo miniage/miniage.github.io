@@ -11,8 +11,8 @@ class Button extends Component {
           </linearGradient>
         </defs>
         <g>
-          <rect x="120" height="40" width="200" rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}/>
-          <text fill="#4c4c4c" font-size="25" font-family="Ubuntu" x="220" y="20">{this.props.children}</text>
+          <rect x="0" y="0" height="40" width="200" rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}/>
+          <text x="100" y="20" fill="#4c4c4c" font-size="25" font-family="Ubuntu" dominantBaseline="middle" textAnchor="middle" onClick={this.props.onClick}>{this.props.children}</text>
         </g>
       </React.Fragment>
     );
