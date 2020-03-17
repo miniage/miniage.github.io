@@ -30,7 +30,7 @@ class Button extends Component {
   }
   componentDidMount() {
     this.setState({
-      width: this.text.current.width + 10,
+      width: this.text.current.getBBox().width + 10,
     });
   }
 }
