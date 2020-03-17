@@ -20,7 +20,7 @@ class Button extends Component {
         </defs>
         <g>
           <this.rect x="0" y="0" height="40" width={this.state.width} rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}/>
-          <this.text x={this.state.width/2} y="20" fill="#4c4c4c" fontSize="25" fontFamily="Ubuntu" dominantBaseline="middle" textAnchor="middle" onClick={this.props.onClick}>{this.props.children}</text>
+          <this.text x={this.state.width/2} y="20" fill="#4c4c4c" fontSize="25" fontFamily="Ubuntu" dominantBaseline="middle" textAnchor="middle" onClick={this.props.onClick}>{this.props.children}</this.text>
         </g>
       </React.Fragment>
     );
