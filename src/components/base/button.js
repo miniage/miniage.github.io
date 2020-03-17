@@ -2,6 +2,12 @@ import React, { Component } from "react";
 
 const cursorStyle = {
   cursor: "pointer",
+  WebkitTouchCallout: "none",
+  WebkitUserselect: "none",
+  KhtmlUserSelect: "none",
+  MozUserSelect: "none",
+  msUserSelect: "none",
+  userSelect: "none", 
 }
 
 class Button extends Component {
