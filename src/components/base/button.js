@@ -11,6 +11,8 @@ class Button extends Component {
     this.state = {
       width: 200,
     }
+    this.x = isNaN(Number(this.props.x)) ? 0 : Number(this.props.x)
+    this.y = isNaN(Number(this.props.y)) ? 0 : Number(this.props.y)
   }
   render() {
     return (
@@ -22,8 +24,8 @@ class Button extends Component {
           </linearGradient>
         </defs>
         <g>
-          <rect style={cursorStyle} x={this.props.x} y={this.props.y} height="40" width={this.state.width} rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}/>
-          <text ref={this.text} style={cursorStyle} x={Number(this.props.x) + this.state.width/2} y={Number(this.props.y) + 20} fill="#4c4c4c" fontSize="25" fontFamily="Ubuntu" dominantBaseline="middle" textAnchor="middle" onClick={this.props.onClick}>{this.props.children}</text>
+          <rect style={cursorStyle} x={this.x} y={this.y} height="40" width={this.state.width} rx="7" stroke="#737373" fill="url(#ubuntu-button-style1)" onClick={this.props.onClick}/>
+          <text ref={this.text} style={cursorStyle} x={this.x + this.state.width/2} y={this.y + 20} fill="#4c4c4c" fontSize="25" fontFamily="Ubuntu" dominantBaseline="middle" textAnchor="middle" onClick={this.props.onClick}>{this.props.children}</text>
         </g>
       </React.Fragment>
     );
