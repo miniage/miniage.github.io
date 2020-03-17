@@ -8,8 +8,8 @@ class OS extends Component {
     return (
       <svg width="100%" height="100%">
         <Button onClick={Update}>Update MiniageOS</Button>
-        <Button>This is another MiniageOS button, but it's longer</Button>
-        <Button>Shorter</Button>
+        <Button y=50>This is another MiniageOS button, but it's longer</Button>
+        <Button y=100>Shorter</Button>
       </svg>
     );
   }
